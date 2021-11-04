@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>My game</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  <body>
+    <div class="row">
+      <div class="col-sm">
+        <div class="position-fixed text-white ms-2 mt-1">
+          <span>Score:</span> <span id="scoreEl">0</span>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="position-fixed float-right text-white ms-2 mt-1">
+          <span>Lives:</span> <span id="livesEl">3</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="endScreenEl" style="display: none">
+      <div
+        class="row position-fixed"
+        style="margin-top: 230px; margin-left: 140px"
+      >
+        <div class="col-sm">
+          <div class="text-white mt-20">
+            <span>GAME OVER</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row position-fixed"
+        style="margin-top: 250px; margin-left: 140px"
+      >
+        <div class="col-sm">
+          <div class="text-white mt-20">
+            <span>Score: </span> <span id="finalScoreEl"></span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row position-fixed"
+        style="margin-top: 290px; margin-left: 140px"
+      >
+        <button id="restartGameBtn" type="button" class="btn btn-primary">
+          Restart Game
+        </button>
+      </div>
+    </div>
+
+    <canvas id="game" width="400" height="600"></canvas>
+    <script src="game.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </body>
+  
+</html>
